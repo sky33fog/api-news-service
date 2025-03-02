@@ -15,6 +15,10 @@ public class UserResponse {
 
     private String name;
 
+    private String password;
+
+    private List<RoleResponse> roles;
+
     private List<NewsSomeResponse> newsList;
 
     private List<CommentResponse> commentList;

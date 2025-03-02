@@ -13,8 +13,4 @@ public class CommentCreateRequest {
     @NotNull(message = "ID новости должно быть указано!")
     @Positive(message = "ID новости должно быть больше 0!")
     private Long newsId;
-
-    @NotNull(message = "ID пользователя должно быть указано!")
-    @Positive(message = "ID пользователя должно быть больше 0!")
-    private Long userId;
 }

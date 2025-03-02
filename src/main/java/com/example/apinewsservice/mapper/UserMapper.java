@@ -11,7 +11,7 @@ import org.mapstruct.ReportingPolicy;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Mapper(componentModel = "spring", unmappedSourcePolicy = ReportingPolicy.IGNORE, uses = {NewsMapper.class})
+@Mapper(componentModel = "spring", unmappedSourcePolicy = ReportingPolicy.IGNORE, uses = {NewsMapper.class, RoleMapper.class})
 public interface UserMapper {
 
     User requestToUser(UserCreateRequest request);

@@ -11,4 +11,6 @@ public class UserCreateRequest {
     @Size (min = 3, max = 30,
             message = "Имя пользователя должно быть больше {min}, и меньше {max} символов.")
     private String name;
+
+    private String password;
 }
